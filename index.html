@@ -1,28 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Hello, I’m Your Name</h1>
-    <p>Developer | Designer | Creator</p>
-    <a href="#projects">See My Work</a>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-indigo-600 to-blue-500 text-white text-center py-20">
+    <h1 class="text-4xl md:text-5xl font-bold">Hi, I’m <span class="text-yellow-300">Your Name</span></h1>
+    <p class="mt-4 text-lg md:text-xl">💻 Developer | 🎨 Designer | 🚀 Creator</p>
+    <a href="#projects" class="mt-6 inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
+      View My Work
+    </a>
   </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="#">Project 1</a></li>
-      <li><a href="#">Project 2</a></li>
-    </ul>
+  <!-- About Section -->
+  <section id="about" class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-indigo-600 mb-6">About Me</h2>
+    <p class="text-lg">
+      I’m a passionate developer/designer who loves building creative and impactful projects.
+      This portfolio showcases some of my work.
+    </p>
   </section>
 
-  <footer>
-    <p>📧 your@email.com</p>
-    <p>© 2025 Your Name</p>
+  <!-- Projects Section -->
+  <section id="projects" class="bg-white py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-indigo-600 mb-10 text-center">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-gray-100 rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+          <p class="mb-4">Short description of your project.</p>
+          <a href="#" target="_blank" class="text-indigo-600 font-semibold hover:underline">🔗 View Project</a>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-gray-100 rounded-xl shadow p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+          <p class="mb-4">Short description of your project.</p>
+          <a href="#" target="_blank" class="text-indigo-600 font-semibold hover:underline">🔗 View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-indigo-600 mb-6">Contact</h2>
+    <p class="text-lg mb-4">📧 Email me at <a href="mailto:your@email.com" class="text-indigo-600 hover:underline">your@email.com</a></p>
+    <p class="text-lg">🔗 Find me on <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-indigo-600 hover:underline">LinkedIn</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 mt-10">
+    <p>© 2025 Your Name | Built with ❤️ using Tailwind & GitHub Pages</p>
   </footer>
+
 </body>
 </html>
